@@ -2,7 +2,7 @@ pipeline{
 agent any
 stages
 {
-stage('clone repo'){
+stage('SCM Checkout'){
 steps{
 sh "git clone https://github.com/HariReddy910/caramelIT.git"
     }
