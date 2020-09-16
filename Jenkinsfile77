@@ -2,7 +2,7 @@ pipeline{
 agent any
 {
 stage('SCM Checkout'){ 
-sh ''
+sh 'https://github.com/paddo0404/caramelit.git'
     }
 stage('compile-package'){
 def mvnHome=tool name: 'maven', type: 'maven'
