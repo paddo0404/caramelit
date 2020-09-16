@@ -1,16 +1,15 @@
 pipeline{
 agent any
-stages
 {
 stage('SCM Checkout'){
-steps{
-sh "git clone https://github.com/HariReddy910/caramelIT.git"
-    }
+
+sh 'git clone https://github.com/HariReddy910/caramelIT.git'
+    
                  }
 stage('compile-package'){
-steps{
-sh "mvn package"
-     }
+
+sh 'mvn package'
+     
      }
      }
 }
